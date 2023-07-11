@@ -1,0 +1,79 @@
+@font-face {
+    font-family: MazzardL;
+    src: url(./fonts/MazzardL-Regular.otf) format (truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: MazzardL;
+    src: url(./fonts/MazzardL-SemiBold.otf) format (truetype);
+    font-weight: 600;
+}
+
+:root {
+    --text-color: #1d263a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MazzardL", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header {
+    height: 110px;
+}
+
+.logo {
+    height: 28px;
+}
+
+.navigation {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    padding: 40px 152px;
+    text-align: center;
+}
+
+.navigation__links {
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+}
+
+.navigation__links li {
+    display: inline-block;
+}
+
+.navigation__links li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation__links li a,
+.navigation a {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.navigation a {
+    vertical-align: top;
+    width: 10%;
+}
