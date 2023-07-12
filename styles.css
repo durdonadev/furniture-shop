@@ -12,6 +12,8 @@
 
 :root {
     --text-color: #1d263a;
+    --beige-color: #fae2da;
+    --orange-color: #ff794d;
 }
 
 * {
@@ -32,9 +34,14 @@ a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 /* Header */
 
-.header {
+#header {
     height: 110px;
 }
 
@@ -43,9 +50,6 @@ a {
 }
 
 .navigation {
-    max-width: 1600px;
-    margin: 0 auto;
-
     padding: 40px 152px;
     text-align: center;
 }
@@ -76,4 +80,88 @@ a {
 .navigation a {
     vertical-align: top;
     width: 10%;
+}
+
+/* Hero Section */
+
+.hero-section__card {
+    background-color: var(--beige-color);
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 30px;
+}
+
+.hero-section__left {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    height: 616px;
+
+    position: relative;
+}
+
+.hero-section__left .cicle {
+    height: 310px;
+    position: absolute;
+    top: 146px;
+    right: 0;
+}
+
+.hero-section__left .chair {
+    height: 525px;
+    width: auto;
+    position: absolute;
+    top: 75px;
+    right: 38px;
+}
+
+.hero-section__right {
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 130px 80px;
+}
+
+.hero-section__right .text-top {
+    color: var(--orange-color);
+}
+
+.hero-section__right span {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 6px;
+}
+
+.hero-section__right h1 {
+    color: var(--text-color);
+
+    display: flex;
+    width: 659px;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    margin-top: 34px;
+    margin-bottom: 28px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 66px;
+}
+
+.hero-section__right p {
+    display: flex;
+    width: 495px;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 58px;
+}
+
+.hero-section__right .line {
+    margin-right: 24px;
 }
