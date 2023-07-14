@@ -17,7 +17,7 @@
     --white-color: #fff;
     --green-color-25: #d6ebe4;
     --green-color-100: #20bfa9;
-    --light-blue-color: #ebf5ff;
+    --blue-color-25: #ebf5ff;
     --grey-color-25: #f9fafb;
     --grey-color-50: #dfdfdfb3;
     --grey-color-100: #dfdfdf7c;
@@ -70,6 +70,7 @@ a {
 
 .text-md {
     color: var(--text-color);
+    opacity: 0.6;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -77,6 +78,7 @@ a {
 
 .text-lg {
     color: var(--text-color);
+    opacity: 0.6;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -235,7 +237,7 @@ a {
 }
 
 .ellipse.shape-3 {
-    background-color: var(--light-blue-color);
+    background-color: var(--blue-color-25);
 }
 
 .ellipse .icon {
@@ -293,6 +295,18 @@ a {
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.chair-light {
+    object-position: 50%;
+}
+
+.chair-dark {
+    object-position: 75%;
+}
+
+.couch {
+    object-position: 15%;
 }
 
 #design-last-card {
