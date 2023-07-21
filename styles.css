@@ -48,7 +48,7 @@
     padding: 0 60px;
 }
 
-.hero-section__card {
+.hero-section__content {
     background-color: var(--beige-color);
     border-radius: 30px;
     padding: 75px 92px;
@@ -86,7 +86,7 @@
     width: calc(100% - 36.2% - 80px);
     display: inline-block;
     vertical-align: top;
-    padding: 65px 0;
+    padding: 60px 0;
 }
 
 .uppercase-text-2.text-top {
@@ -184,6 +184,7 @@
 
 .arrow-right,
 .arrow-left {
+    cursor: pointer;
     width: 25px;
     height: 20px;
 }
@@ -196,11 +197,11 @@
     display: inline-block;
     vertical-align: top;
     height: 680px;
-    width: calc((100% - 52px) / 3);
+    width: calc((100% - 40px) / 3);
 }
 
 .designs-section .design-card:not(:last-child) {
-    margin-right: 26px;
+    margin-right: 20px;
 }
 
 .design-img {
@@ -261,6 +262,7 @@
     width: 20px;
     right: 24px;
     bottom: 24px;
+    cursor: pointer;
 }
 
 /* Process Section*/
