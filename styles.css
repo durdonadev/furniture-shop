@@ -1,16 +1,11 @@
 /* Header */
 
-#header {
-    height: 110px;
-}
-
-.logo {
-    height: 28px;
-}
-
 .navigation {
     padding: 40px 152px;
     position: relative;
+}
+.logo {
+    height: 28px;
 }
 
 .navigation__links {
@@ -28,15 +23,15 @@
     margin-right: 50px;
 }
 
-.navigation__links li a,
+.navigation__links a,
 .navigation a {
     color: var(--text-color);
-    font-size: 18px;
     font-weight: 900;
+    font-size: 18px;
     line-height: 30px;
 }
 
-.navigation .navigation__action {
+.navigation__action {
     vertical-align: top;
     position: absolute;
     right: 152px;
@@ -52,7 +47,6 @@
     background-color: var(--beige-color);
     border-radius: 30px;
     padding: 75px 92px;
-    position: relative;
 }
 
 .hero-section__left {
@@ -193,14 +187,14 @@
     margin-right: 15px;
 }
 
-.design-card {
+.design-img-box {
     display: inline-block;
     vertical-align: top;
     height: 680px;
     width: calc((100% - 40px) / 3);
 }
 
-.designs-section .design-card:not(:last-child) {
+.designs-section .design-img-box:not(:last-child) {
     margin-right: 20px;
 }
 
@@ -223,7 +217,7 @@
     object-position: 15%;
 }
 
-#design-last-card {
+.design-img-box:last-child {
     position: relative;
 }
 
@@ -259,7 +253,7 @@
 
 .design-inner-card img {
     position: absolute;
-    width: 20px;
+    height: 16px;
     right: 24px;
     bottom: 24px;
     cursor: pointer;
@@ -532,11 +526,13 @@
 
 /* Footer Section */
 
+.footer {
+    padding: 0 60px 60px;
+}
+
 .footer__content {
     background-color: var(--beige-color);
     border-radius: 30px;
-    margin: 0 60px 60px;
-
     padding: 140px 92px;
 }
 
