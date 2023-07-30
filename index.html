@@ -27,16 +27,18 @@
             <div class="hero-section container">
                 <div class="hero-section__content">
                     <div class="hero-section__left">
-                        <img
-                            class="cicle"
-                            src="./images/shape-1.png"
-                            alt="Circle shape"
-                        />
-                        <img
-                            class="chair"
-                            src="./images/hero.png"
-                            alt="Chair"
-                        />
+                        <div class="hero-img-wrapper">
+                            <img
+                                class="cicle"
+                                src="./images/shape-1.png"
+                                alt="Circle shape"
+                            />
+                            <img
+                                class="chair"
+                                src="./images/hero.png"
+                                alt="Chair"
+                            />
+                        </div>
                     </div>
 
                     <div class="hero-section__right">
@@ -63,14 +65,12 @@
         <section id="features-section">
             <div class="features-section container">
                 <div class="feature">
-                    <div class="feature-icon">
-                        <div class="ellipse shape-1">
-                            <img
-                                class="icon"
-                                src="./images/heart.svg"
-                                alt="heart shape"
-                            />
-                        </div>
+                    <div class="feature-icon ellipse-1">
+                        <img
+                            class="icon"
+                            src="./images/heart.svg"
+                            alt="heart shape"
+                        />
                     </div>
                     <div class="feature-text">
                         <h4 class="heading-6">Best quality</h4>
@@ -82,14 +82,12 @@
                 </div>
 
                 <div class="feature">
-                    <div class="feature-icon">
-                        <div class="ellipse shape-2">
-                            <img
-                                class="icon"
-                                src="./images/zap.svg"
-                                alt="heart shape"
-                            />
-                        </div>
+                    <div class="feature-icon ellipse-2">
+                        <img
+                            class="icon"
+                            src="./images/zap.svg"
+                            alt="heart shape"
+                        />
                     </div>
                     <div class="feature-text">
                         <h4 class="heading-6">Fastest delivery</h4>
@@ -101,14 +99,12 @@
                 </div>
 
                 <div class="feature">
-                    <div class="feature-icon">
-                        <div class="ellipse shape-3">
-                            <img
-                                class="icon"
-                                src="./images/headphones.svg"
-                                alt="heart shape"
-                            />
-                        </div>
+                    <div class="feature-icon ellipse-3">
+                        <img
+                            class="icon"
+                            src="./images/headphones.svg"
+                            alt="heart shape"
+                        />
                     </div>
                     <div class="feature-text">
                         <h4 class="heading-6">Great support</h4>
@@ -173,17 +169,16 @@
                 <h5 class="uppercase-text-1">OUR WORKING PROCESS</h5>
 
                 <div class="process-row">
-                    <div class="number"><p class="num">01.</p></div>
-                    <div class="process-heading">
-                        <h4 class="heading-4">Discuss the concept with us.</h4>
-                    </div>
-                    <div class="process-text">
-                        <p class="text-lg">
-                            Engage in an insightful conversation with our team
-                            to explore your project's vision, goals, and desired
-                            outcomes
-                        </p>
-                    </div>
+                    <p class="number">01.</p>
+                    <h4 class="process-heading heading-4">
+                        Discuss the concept with us.
+                    </h4>
+
+                    <p class="process-text text-lg">
+                        Engage in an insightful conversation with our team to
+                        explore your project's vision, goals, and desired
+                        outcomes
+                    </p>
                     <div class="process-link">
                         <div class="orange-line"></div>
                         <a class="uppercase-text-2" href=""> LEARN MORE</a>
@@ -191,17 +186,18 @@
                 </div>
 
                 <div class="process-row">
-                    <div class="number"><p class="num">02.</p></div>
-                    <div class="process-heading">
-                        <h4 class="heading-4">Confirm the provided design.</h4>
-                    </div>
-                    <div class="process-text">
-                        <p class="text-lg">
-                            Once you provide us with the design you envision,
-                            our experienced team will meticulously review and
-                            validate every aspect.
-                        </p>
-                    </div>
+                    <p class="number">02.</p>
+
+                    <h4 class="process-heading heading-4">
+                        Confirm the provided design.
+                    </h4>
+
+                    <p class="process-text text-lg">
+                        Once you provide us with the design you envision, our
+                        experienced team will meticulously review and validate
+                        every aspect.
+                    </p>
+
                     <div class="process-link">
                         <div class="orange-line"></div>
                         <a class="uppercase-text-2" href=""> LEARN MORE</a>
@@ -209,20 +205,19 @@
                 </div>
 
                 <div class="process-row">
-                    <div class="number"><p class="num">03.</p></div>
-                    <div class="process-heading">
-                        <h4 class="heading-4">
-                            Get delivered the furniture on time.
-                        </h4>
-                    </div>
-                    <div class="process-text">
-                        <p class="text-lg">
-                            Our dedicated team prioritizes punctuality and
-                            efficient logistics to ensure that your furniture
-                            arrives precisely.
-                        </p>
-                    </div>
-                    <div class="process-link last">
+                    <p class="number">03.</p>
+
+                    <h4 class="process-heading heading-4">
+                        Get delivered the furniture on time.
+                    </h4>
+
+                    <p class="process-text text-lg">
+                        Our dedicated team prioritizes punctuality and efficient
+                        logistics to ensure that your furniture arrives
+                        precisely.
+                    </p>
+
+                    <div class="process-link">
                         <div class="orange-line"></div>
                         <a class="uppercase-text-2" href=""> LEARN MORE</a>
                     </div>
@@ -296,13 +291,12 @@
         <section id="subscribe-section">
             <div class="subscribe-section container">
                 <h3 class="heading-3">
-                    Subscribe to our <br />newsletter to get updated
+                    Subscribe to our newsletter to get updated
                 </h3>
                 <p class="text-lg">
                     Get our latest update on your inbox. With lots of unique
-                    blocks, <br />you can easily build a page without coding.
-                    Build your next <br />consultancy website within few
-                    minutes.
+                    blocks, you can easily build a page without coding. Build
+                    your next consultancy website within few minutes.
                 </p>
                 <input
                     type="email"
