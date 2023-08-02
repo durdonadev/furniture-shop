@@ -6,12 +6,13 @@
 }
 .logo {
     height: 28px;
+    vertical-align: middle;
 }
 
 .navigation__links {
     width: 80%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     text-align: center;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .navigation__action {
-    vertical-align: top;
+    vertical-align: middle;
     position: absolute;
     right: 152px;
 }
@@ -51,27 +52,26 @@
 
 .hero-section__left {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: calc((100% - 80px) * 0.4);
     height: 525px;
     margin-right: 80px;
-}
-
-.hero-img-wrapper {
     position: relative;
-    height: 525px;
-    width: 100%;
+    background-color: blueviolet;
 }
 
 .cicle {
     height: auto;
     width: 66%;
     position: absolute;
+    z-index: 1;
     top: 70px;
     right: 0;
 }
 
 .chair {
+    position: relative;
+    z-index: 2;
     height: auto;
     width: 90%;
 }
@@ -80,8 +80,8 @@
     height: max-content;
     width: calc((100% - 80px) * 0.6);
     display: inline-block;
-    vertical-align: top;
-    padding: 60px 0;
+    vertical-align: middle;
+    background-color: aquamarine;
 }
 
 .uppercase-text-2.text-top {
@@ -318,14 +318,14 @@
 
 .about-section__left {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     margin-right: 180px;
-    width: 40%;
+    width: calc((100% - 180px) * 0.5);
 }
 
 .about-section__left .img-box {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     height: 604px;
     width: 100%;
     position: relative;
@@ -346,11 +346,9 @@
 }
 
 .about-section__right {
-    width: calc(60% - 180px);
-    height: 604px;
+    width: calc((100% - 180px) * 0.5);
     display: inline-block;
-    vertical-align: top;
-    padding: 160px 0;
+    vertical-align: middle;
 }
 
 .about-section__right h3 {
@@ -369,14 +367,10 @@
 
 .testimonials-section__left {
     padding-left: 152px;
-    padding-top: 220px;
-    padding-bottom: 220px;
     margin-right: 150px;
     display: inline-block;
-    vertical-align: top;
-    width: calc(50% - 150px);
-    height: 780px;
-    position: relative;
+    vertical-align: middle;
+    width: calc((100% - 150px) * 0.45);
 }
 
 .testimonials-section__left .heading-3 {
@@ -400,13 +394,13 @@
 
 .testimonials-section__right {
     display: inline-block;
-    vertical-align: top;
-    width: 50%;
+    vertical-align: middle;
+    width: calc((100% - 150px) * 0.55);
 }
 
 .testimonials-img-box {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     height: 780px;
     width: 100%;
     position: relative;
