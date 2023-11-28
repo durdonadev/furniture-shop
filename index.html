@@ -13,14 +13,17 @@
             <nav class="navigation container">
                 <img class="logo" src="./images/logo.svg" alt="Whiter logo" />
 
-                <ul class="navigation__links">
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Rooms</a></li>
-                    <li><a href="">Inspiration</a></li>
-                    <li><a href="">Support</a></li>
-                </ul>
-
-                <a class="navigation__action" href="">Sign in</a>
+                <div class="navigation__actions">
+                    <ul class="navigation__links">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Rooms</a></li>
+                        <li><a href="">Inspiration</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                    <div class="sign-in__wrapper">
+                        <a href="">Sign in</a>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -28,16 +31,18 @@
             <div class="hero-section container">
                 <div class="hero-section__content">
                     <div class="hero-section__left">
-                        <img
-                            class="cicle"
-                            src="./images/shape-1.png"
-                            alt="Circle shape"
-                        />
-                        <img
-                            class="chair"
-                            src="./images/hero.png"
-                            alt="Chair"
-                        />
+                        <div class="hero-img-wrapper">
+                            <img
+                                class="cicle"
+                                src="./images/shape-1.png"
+                                alt="Circle shape"
+                            />
+                            <img
+                                class="chair"
+                                src="./images/hero.png"
+                                alt="Chair"
+                            />
+                        </div>
                     </div>
 
                     <div class="hero-section__right">
@@ -132,7 +137,7 @@
                     />
                 </div>
 
-                <div class="design-img-box">
+                <div class="left design-img-box">
                     <img
                         class="design-img chair-light"
                         src="./images/chair-light.jpeg"
@@ -140,7 +145,7 @@
                     />
                 </div>
 
-                <div class="design-img-box">
+                <div class="middle design-img-box">
                     <img
                         class="design-img chair-dark"
                         src="./images/chair-dark.jpeg"
@@ -148,7 +153,7 @@
                     />
                 </div>
 
-                <div class="design-img-box">
+                <div class="right design-img-box">
                     <img
                         class="design-img couch"
                         src="./images/couch.jpeg"
@@ -159,6 +164,19 @@
                         <p id="inner-card-text">White Phonix</p>
                         <img src="./images/arrow-right-2.svg" alt="" />
                     </div>
+                </div>
+
+                <div class="arrows-hidden">
+                    <img
+                        class="arrow-right"
+                        src="./images/arrow-right.svg"
+                        alt="arrow right"
+                    />
+                    <img
+                        class="arrow-left"
+                        src="./images/arrow-left.svg"
+                        alt="arrow left"
+                    />
                 </div>
             </div>
         </section>
@@ -260,8 +278,8 @@
             <div class="testimonials-section container">
                 <div class="testimonials-section__left">
                     <h3 class="heading-3">
-                        “It was super easy to share <br />my unique concept. I
-                        got exactly what I ordered. Great service!”
+                        “It was super easy to share my unique concept. I got
+                        exactly what I ordered. Great service!”
                     </h3>
                     <div class="white-line"></div>
                     <span class="testimonials-name">Jenny Wilson</span>
@@ -289,28 +307,36 @@
 
         <section id="subscribe-section">
             <div class="subscribe-section container">
-                <h3 class="heading-3">
-                    Subscribe to our newsletter to get updated
-                </h3>
-                <p class="text-lg">
-                    Get our latest update on your inbox. With lots of unique
-                    blocks, you can easily build a page without coding. Build
-                    your next consultancy website within few minutes.
-                </p>
-                <input
-                    type="email"
-                    placeholder="Enter email address"
-                    id="emailInput"
-                />
-                <input type="submit" value="Subscribe" id="subscribeInput" />
-
-                <div class="promise-container">
-                    <img
-                        class="lock-img"
-                        src="./images/lock.svg"
-                        alt="lock icon"
+                <div class="subscribe-wrapper">
+                    <h3 class="heading-3">
+                        Subscribe to our newsletter to get updated
+                    </h3>
+                    <p class="text-lg">
+                        Get our latest update on your inbox. With lots of unique
+                        blocks, you can easily build a page without coding.
+                        Build your next consultancy website within few minutes.
+                    </p>
+                    <input
+                        type="email"
+                        placeholder="Enter email address"
+                        id="emailInput"
                     />
-                    <p class="text-md">We don’t spam at all, our promise!</p>
+                    <input
+                        type="submit"
+                        value="Subscribe"
+                        id="subscribeInput"
+                    />
+
+                    <div class="promise-container">
+                        <img
+                            class="lock-img"
+                            src="./images/lock.svg"
+                            alt="lock icon"
+                        />
+                        <p class="text-md">
+                            We don’t spam at all, our promise!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -321,8 +347,8 @@
                     <div class="footer__brand">
                         <img src="./images/logo.svg" alt="Whiter logo" />
                         <p class="text-lg">
-                            We make furniture with love and <br />passions. No
-                            doubt, really.
+                            We make furniture with love and passions. No doubt,
+                            really.
                         </p>
                         <p class="text-lg">&copy; TuranTech Inc.</p>
                     </div>

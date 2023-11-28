@@ -6,12 +6,19 @@
 }
 
 .logo {
-    height: 2.8rem;
+    width: 8rem;
     vertical-align: middle;
 }
 
+.navigation__actions {
+    width: calc(100% - 8rem);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
+
 .navigation__links {
-    width: 80%;
+    width: 90%;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -33,10 +40,10 @@
     line-height: 3rem;
 }
 
-.navigation__action {
+.sign-in__wrapper {
+    display: inline-block;
     vertical-align: middle;
-    position: absolute;
-    right: 15.2rem;
+    width: 10%;
 }
 
 /* Hero Section */
@@ -55,18 +62,21 @@
     display: inline-block;
     vertical-align: middle;
     width: calc((100% - 8rem) * 0.4);
-    height: 52.5rem;
     margin-right: 8rem;
     position: relative;
+}
+
+.hero-img-wrapper img {
+    max-width: 100%;
 }
 
 .cicle {
     height: auto;
     width: 66%;
     position: absolute;
-    z-index: 1;
     top: 7rem;
     right: 0;
+    z-index: 1;
 }
 
 .chair {
@@ -193,7 +203,8 @@
     width: calc((100% - 4rem) / 3);
 }
 
-.designs-section .design-img-box:not(:last-child) {
+.left.design-img-box,
+.middle.design-img-box {
     margin-right: 2rem;
 }
 
@@ -216,7 +227,7 @@
     object-position: 15%;
 }
 
-.design-img-box:last-child {
+.right.design-img-box {
     position: relative;
 }
 
@@ -258,6 +269,10 @@
     cursor: pointer;
 }
 
+.arrows-hidden {
+    display: none;
+}
+
 /* Process Section*/
 
 .process-section {
@@ -283,11 +298,11 @@
 .process-link {
     display: inline-block;
     vertical-align: bottom;
-    width: calc((100% - 6rem - 10rem - 15rem) * 0.25);
+    width: calc((100% - 26rem) * 0.2);
 }
 
 .number {
-    width: calc((100% - 6rem - 10rem - 15rem) * 0.1);
+    width: calc((100% - 26rem) * 0.1);
     margin-right: 6rem;
     color: var(--green-color-100);
     font-size: 2.8rem;
@@ -296,15 +311,15 @@
 }
 
 .process-heading {
-    width: calc((100% - 6rem - 10rem - 15rem) * 0.25);
+    width: calc((100% - 26rem) * 0.3);
     margin-right: 10rem;
 }
 
 .process-text {
     padding-left: 0;
     padding-top: 0;
-    width: calc((100% - 6rem - 10rem - 15rem) * 0.4);
-    margin-right: 15rem;
+    width: calc((100% - 26rem) * 0.4);
+    margin-right: 10rem;
 }
 /* About Section */
 
@@ -339,7 +354,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-1rem, 10rem);
+    transform: translate(-10%, 100%);
 }
 
 .about-section__right {
@@ -444,10 +459,9 @@
     text-align: center;
 }
 
-.subscribe-section h3,
-.subscribe-section p {
+.subscribe-wrapper {
     margin: 0 auto;
-    max-width: 40%;
+    width: 40%;
 }
 
 .subscribe-section .heading-3 {
@@ -459,12 +473,13 @@
 }
 
 #emailInput {
+    width: 65%;
     margin-bottom: 3.4rem;
     padding: 2rem 2.8rem;
     height: 7rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    border: 1px solid var(--grey-color-50);
+    border: 0.1rem solid var(--grey-color-50);
     background: var(--white-color);
 }
 
@@ -481,9 +496,10 @@
 }
 
 #subscribeInput {
+    width: 35%;
     background-color: var(--green-color-100);
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    /* padding-left: 2.4rem;
+    padding-right: 2.4rem; */
     cursor: pointer;
     height: 7rem;
     border: none;
@@ -506,7 +522,6 @@
 .promise-container .lock-img {
     position: absolute;
     top: 0.4rem;
-
     width: 1.5rem;
     height: 1.5rem;
     display: inline-block;
@@ -532,7 +547,7 @@
 }
 
 .footer__content > *:not(:last-child) {
-    margin-right: 2.6rem;
+    margin-right: 8rem;
 }
 
 .footer__content > * {
@@ -541,11 +556,11 @@
 }
 
 .footer__content > *:not(:first-child) {
-    width: calc((100% - 7.8rem) * 0.7 / 3);
+    width: calc((100% - 24rem) * 0.7 / 3);
 }
 
 .footer__brand {
-    width: calc((100% - 7.8rem) * 0.3);
+    width: calc((100% - 24rem) * 0.3);
 }
 
 .footer__brand img {
