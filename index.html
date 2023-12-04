@@ -10,10 +10,10 @@
     </head>
     <body>
         <header id="header">
-            <nav class="navigation container">
+            <div class="navigation container">
                 <img class="logo" src="./images/logo.svg" alt="Whiter logo" />
 
-                <div class="navigation__actions">
+                <nav class="navigation__actions">
                     <ul class="navigation__links">
                         <li><a href="">Products</a></li>
                         <li><a href="">Rooms</a></li>
@@ -23,8 +23,24 @@
                     <div class="sign-in__wrapper">
                         <a href="">Sign in</a>
                     </div>
-                </div>
-            </nav>
+                </nav>
+                <img src="./images/menu.svg" alt="" id="mobile-nav-icon" />
+
+                <nav class="mobile-nav">
+                    <img
+                        class="mobile-nav_logo"
+                        src="./images/logo.svg"
+                        alt="Whiter logo"
+                    />
+                    <span class="close-icon">&times;</span>
+                    <ul class="mobile-navigation__links">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Rooms</a></li>
+                        <li><a href="">Inspiration</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section id="hero-section">
@@ -386,5 +402,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./script.js"></script>
     </body>
 </html>
